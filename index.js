@@ -9,6 +9,8 @@ function SerLCD(serialport, flushInterval){
     this.serialPort = new SerialPort(serialport || "/dev/ttyUSB0");
     this.writeQueue = []; //A pipeline for commands so we don't overwhelm the thing
     this.flushInterval = parseInt(flushInterval) || 50;
+    
+    this._maybeWrite();
 }
 
 //Write a string or a buffer to the writeQueue
