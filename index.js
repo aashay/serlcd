@@ -49,10 +49,7 @@ SerLCD.prototype.writeTopLine = function(line, truncateTo){
 //Truncate it to N characters, 16 by default.
 SerLCD.prototype.writeBottomLine = function(line){
     line = line.substring(0,16);  //Truncate
-    serialPort.write(new Buffer([0xFE, 0xC0])); //0xC0 sets cursor to first position of second line
-    setTimeout(function(){
-        serialPort.write(line);
-    }, 100);
+    this.write(new Buffer([0xFE, 0xC0])); //0xC0 sets cursor to first position of second line
 }
 
 //Turn off the backlight.
