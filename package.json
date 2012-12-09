@@ -1,0 +1,30 @@
+{
+  "name": "serlcd",
+  "version": "0.0.1",
+  "description": "Simple wrappers for communicating to the SerLCD 2.5",
+  "main": "index.js",
+  "dependencies": {
+    "serialport": "~1.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aashay/serlcd.git"
+  },
+  "keywords": [
+    "serial",
+    "lcd",
+    "sparkfun",
+    "7segment",
+    "seven",
+    "segment",
+    "7-segment",
+    "display",
+    "uart"
+  ],
+  "author": "Aashay Desai",
+  "license": "MIT"
+}
