@@ -79,4 +79,4 @@ SerLCD.prototype.backlight100 = function(){
     this.write(b);
 }
 
-modules.export = SerLCD;
+module.exports = SerLCD;
