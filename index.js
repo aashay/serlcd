@@ -45,6 +45,7 @@ SerLCD.prototype.clearAndWrite = function(msg){
 SerLCD.prototype.writeTopLine = function(line, truncateTo){    
     line = line.substring(0, (truncateTo || 16));  //Truncate    
     this.write(new Buffer([0xFE, 0x80])); //0x80 sets cursor to first position of first line
+    this.write(line);
 }
 
 //Write a line to the bottom of the display (without clearing the top).
@@ -52,6 +53,7 @@ SerLCD.prototype.writeTopLine = function(line, truncateTo){
 SerLCD.prototype.writeBottomLine = function(line){
     line = line.substring(0,16);  //Truncate
     this.write(new Buffer([0xFE, 0xC0])); //0xC0 sets cursor to first position of second line
+    this.write(line);
 }
 
 //Turn off the backlight.

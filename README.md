@@ -27,8 +27,8 @@ Note: In my experience writing to the backlight a lot seemed to confuse the devi
 
 * `clearScreen`: Clears the screen.
 * `clearAndWrite`: Clears the screen (resetting the cursor position to 0), then writes a string/buffer.
-* `writeTopLine`: Reset the cursor to the top line and write to the top line (without removing the bottom line).
-* `writeBottomLine`: Reset the cursor to the bottom line and write to the bottom line (without removing the top line).
+* `writeTopLine`: Reset the cursor to the top line and write a string (not a buffer) to the top line (without removing the bottom line).
+* `writeBottomLine`: Reset the cursor to the bottom line and write a string (not a buffer) to the bottom line (without removing the top line).
 * `backlightOff`: Turn the backlight off.
 * `backlight40`: Set backlight to 40%
 * `backlight73`: Set backlight to 73%
