@@ -1,6 +1,6 @@
 {
   "name": "serlcd",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple wrappers for communicating to the SerLCD 2.5",
   "main": "index.js",
   "dependencies": {
