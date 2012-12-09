@@ -12,7 +12,8 @@ Note: In my experience writing to the backlight a lot seemed to confuse the devi
 
 ## Usage
 
-    var lcd = require('serlcd')("/dev/ttyUSB0");
+    var serlcd = require('serlcd');
+    var lcd = new serlcd("/dev/ttyUSB0");
 
     lcd.clearScreen();
     lcd.write("Hooray!");
